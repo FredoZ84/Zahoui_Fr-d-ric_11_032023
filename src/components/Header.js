@@ -4,7 +4,9 @@ import '../styles/Header.css'
 function Header() {
 	return (
     <header>
-        <img src={logo} alt='Logo de Kasa' />
+        <h1>
+            <img src={logo} alt='Logo de Kasa' />
+        </h1>        
 
         <nav>
             <ul>
