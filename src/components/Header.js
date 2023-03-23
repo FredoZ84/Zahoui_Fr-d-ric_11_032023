@@ -2,6 +2,10 @@ import logo from '../assets/logo.png'
 import '../styles/Header.css'
 
 function Header() {
+
+
+    const navigation = ["Accueil","A Propos"]
+
 	return (
     <header>
         <h1>
@@ -10,16 +14,15 @@ function Header() {
 
         <nav>
             <ul>
-                <li>
-                    <a href="*">
-                        Accueil
-                    </a>
-                </li>
-                <li>
-                    <a href="*">
-                        A Propos
-                    </a>
-                </li>
+                {
+                    navigation.map((tab, index) => (
+                    <li key={`${tab}-${index}`}>
+                        <a href="*">
+                            { tab }
+                        </a>                        
+                    </li>
+                    ))
+                }
             </ul>
         </nav>
     </header>
