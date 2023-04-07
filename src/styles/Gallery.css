@@ -1,5 +1,4 @@
 #gallery{
-    height: 829px;
     border-radius: 25px;
     background-color: #F6F6F6;
 }
@@ -10,18 +9,27 @@
 }
 
 .thumb {
-    background-image: linear-gradient(#FF6060  50%,#000000 130%);
-    border-radius: 10px;
     width: 340px;
     height: 340px;
-    display: flex;
-    flex-direction: column-reverse;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin:20px;
+    margin: 40px;
+    overflow: hidden;
 }
 
-.thumb p {
-    width: 90px;
+.thumb img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.thumb h3 {
+    width: 320px;
+    padding-left: 10px;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    top: 290px;
+    color: white;
+    text-shadow: 1px 1px black;
 }
