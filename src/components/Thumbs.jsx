@@ -1,11 +1,11 @@
 import '../styles/Gallery.css'
 import datas from "../datas/logements.json"
-import Thumb from "./Thumb.js"
+import Thumb from "./Thumb.jsx"
 
 
-function Gallery() {
+function Thumbs() {
     return (
-        <section id="gallery">
+        <section id="thumbs">
             <h2 className="none">Galerie</h2>
             <ul>
             {datas.map((loc) => (
@@ -23,4 +23,4 @@ function Gallery() {
     )
 }
 
-export default Gallery
+export default Thumbs

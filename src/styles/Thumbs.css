@@ -1,9 +1,9 @@
-#gallery{
+#thumbs {
     border-radius: 25px;
     background-color: #F6F6F6;
 }
 
-#gallery ul{
+#thumbs ul {
    display: flex;
    flex-wrap: wrap;
 }

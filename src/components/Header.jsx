@@ -2,8 +2,6 @@ import logo from '../assets/logo.png'
 import '../styles/Header.css'
 
 function Header() {
-
-
     const navigation = ["Accueil","A Propos"]
 
 	return (
