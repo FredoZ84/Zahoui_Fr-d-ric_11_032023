@@ -6,6 +6,7 @@
 #thumbs ul {
    display: flex;
    flex-wrap: wrap;
+   justify-content: center;
 }
 
 .thumb {
@@ -15,9 +16,9 @@
     overflow: hidden;
 }
 
-.thumb img {
-    width: inherit;
-    height: inherit;
+.thumb a img {
+    width: 340px;
+    height: 340px;
     object-fit: cover;
     border-radius: 10px;
     position: absolute;

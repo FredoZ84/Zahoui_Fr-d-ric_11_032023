@@ -1,6 +1,6 @@
-import '../styles/Gallery.css'
+import '../styles/Thumbs.css'
 import datas from "../datas/logements.json"
-import Thumb from "./Thumb.jsx"
+import Thumb from "../components/Thumb"
 
 
 function Thumbs() {

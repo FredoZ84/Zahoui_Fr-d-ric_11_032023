@@ -1,21 +1,32 @@
-#slogan #slogan_background{
+#slogan {
+   height: 223px;
+}
+
+#slogan #slogan_background  {
     border-radius: 25px;
     height: 223px;
     width: 100%;
     object-fit: cover;
-    /*mix-blend-mode: darken;
-    opacity: 0.3;*/
 }
 
-#slogan #slogan_text{
+#slogan #slogan_background.repositioned{
     position: relative;
+    bottom:223px;
+    z-index: -1;
+}
+
+#slogan #slogan_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
     text-align: center;
-    font-family: Montserrat;
     font-size: 48px;
     font-weight: 500;
     line-height: 68px;
     letter-spacing: 0em;
     color: #FFFFFF;
-    top: 150px;
     margin: 0px;
+    height: 223px;
+    background-color: rgba(0,0,0,0.4);
 }

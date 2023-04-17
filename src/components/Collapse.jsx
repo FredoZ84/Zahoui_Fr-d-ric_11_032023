@@ -4,12 +4,10 @@ function Collapse({ title, description }) {
   const iClass = 'fa-solid '
   const [show, setShow] = useState(false)
   const [arrowClass, setArrowClass] = useState('fa-chevron-down')
- // const [collapseHeadClass, setCollapseHead] = useState('collapse_head close')
 
   function switchContent() {
     setShow(!show)
     setArrowClass(show ? 'fa-chevron-down' : 'fa-chevron-up')
-    //setCollapseHead(show ? 'collapse_head close' : 'collapse_head open' )
   }
 
   return (
