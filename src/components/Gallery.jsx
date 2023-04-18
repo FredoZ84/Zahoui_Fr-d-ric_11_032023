@@ -2,6 +2,7 @@ import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 import '../styles/Gallery.css'
+
 function Gallery({ images }) {
   return (
     <Carousel
