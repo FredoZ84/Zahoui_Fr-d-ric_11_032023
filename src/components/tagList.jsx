@@ -3,11 +3,11 @@ import Tag from './tag'
 
 function TagList({ listOfTags, accommodationId }) {
   return (
-    <div className="component tagList">
+    <ul className="tagList">
       {listOfTags.map((tag) => (
         <Tag key={accommodationId + tag} label={tag} />
       ))}
-    </div>
+    </ul>
   )
 }
 

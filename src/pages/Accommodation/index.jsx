@@ -4,6 +4,8 @@ import Gallery from '../../components/Gallery'
 import TagList from '../../components/tagList'
 import Stars from '../../components/Stars'
 
+import '../../styles/Tag.css'
+import '../../styles/Accommodation.css'
 
 function Accommodation() {
   let { id } = useParams()
@@ -12,33 +14,29 @@ function Accommodation() {
     return <Navigate replace to="/error" />
   }
   return (
-    <main className="page component accommodation">
-      <article>
-        <Gallery images={accommodation.pictures} />
-        <div className="accommodation__informations">
-          <div className="accommodation__infos">
-            <h1>{accommodation.title}</h1>
-            <p>{accommodation.location}</p>
-            <TagList
-              listOfTags={accommodation.tags}
-              accommodationId={accommodation.id}
+    <main id="accommodation">
+      <Gallery images={accommodation.pictures} />
+      <div className="accommodation_informations">
+        <div className="accommodation_first_group">
+          <h1 className='title'>{accommodation.title}</h1>
+          <p className='location'>{accommodation.location}</p>
+          <TagList
+            listOfTags={accommodation.tags}
+            accommodationId={accommodation.id}
+          />
+        </div>
+        <div className='accommodation_second_group'>
+          <div className="accommodation__infosPlus--host">
+            <p>{accommodation.host.name}</p>
+            <img
+              src={accommodation.host.picture}
+              alt={accommodation.host.name}
             />
           </div>
-          <div className="accommodation__infosPlus">
-            <Stars rating={parseInt(accommodation.rating)} />
-            <div className="accommodation__infosPlus--host">
-              <p>{accommodation.host.name}</p>
-              <img
-                src={accommodation.host.picture}
-                alt={accommodation.host.name}
-              />
-            </div>
-          </div>
+          <Stars rating={parseInt(accommodation.rating)} />
         </div>
-        <div className="accommodation__collapse">
-
-        </div>
-      </article>
+      </div>
+      <div className="collapse_area"></div>
     </main>
   )
 }

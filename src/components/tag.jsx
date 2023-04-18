@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 
 function Tag({ label }) {
-  return <div className="component tag">{label}</div>
+  return <li className="tag">{label}</li>
 }
 
 Tag.propTypes = {

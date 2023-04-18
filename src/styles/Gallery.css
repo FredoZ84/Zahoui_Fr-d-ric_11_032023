@@ -1,0 +1,25 @@
+.carousel-root {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 442px;
+}
+
+.carousel .slide img {
+    height: 440px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.carousel-root  .carousel-slider div svg {
+    width: 47px;
+    height: 80px;
+}
+
+.my_status {
+    position: relative;
+    bottom: 50px;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+}

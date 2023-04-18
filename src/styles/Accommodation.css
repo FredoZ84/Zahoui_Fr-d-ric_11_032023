@@ -1,0 +1,19 @@
+/*
+.accommodation_informations {
+
+}
+*/
+
+#accommodation .accommodation_first_group .title {
+    color:#FF6060;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 51px;
+}
+
+#accommodation .accommodation_first_group .location {
+    color:#FF6060;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;    
+}
