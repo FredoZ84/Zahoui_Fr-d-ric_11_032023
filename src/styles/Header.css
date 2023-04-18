@@ -1,6 +1,7 @@
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 header h1 {
@@ -13,8 +14,8 @@ nav ul {
 
 nav ul li {
     width: 140px;
-    text-align: center;
-    margin: 0px 25px 0px 25px;
+    text-align: right;
+    margin: 0px 0px 0px 25px;
 }
 
 nav ul li a {

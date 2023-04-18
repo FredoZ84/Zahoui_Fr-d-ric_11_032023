@@ -1,8 +1,8 @@
-/*
-.accommodation_informations {
-
+#accommodation .accommodation_informations {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
 }
-*/
 
 #accommodation .accommodation_first_group .title {
     color:#FF6060;
@@ -15,5 +15,60 @@
     color:#FF6060;
     font-weight: 500;
     font-size: 18px;
-    line-height: 26px;    
+    line-height: 26px;
+    margin-bottom: 20px; 
+}
+
+#accommodation .accommodation_infosPlus {
+    display: flex;
+    flex-direction: column;
+}
+
+#accommodation .accommodation_infosPlus .accommodation_name_picture  {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#accommodation .accommodation_infosPlus .accommodation_name_picture .name {
+    color: #FF6060;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    display: flex;
+    width: 120px;
+    justify-content: flex-end;
+    text-align: end;
+    margin-right: 10px;
+}
+
+#accommodation .accommodation_infosPlus .accommodation_name_picture img {
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+}
+
+#accommodation .collapse_area {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#accommodation .collapse_area .collapse {
+    width: 45%;
+}
+
+#accommodation .collapse_area .collapse .collapse_head {
+    height: 52px;
+}
+
+#accommodation .collapse_area .collapse .collapse_description {
+    height: 200px;
+}
+
+#accommodation .collapse_area .collapse .collapse_description p,
+#accommodation .collapse_area .collapse .collapse_description li,
+#accommodation .collapse_area .collapse .collapse_head h3{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
 }
