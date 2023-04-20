@@ -1,32 +1,84 @@
 #slogan {
-   height: 223px;
+  height: 223px;
 }
 
-#slogan #slogan_background  {
-    border-radius: 25px;
-    height: 223px;
-    width: 100%;
-    object-fit: cover;
+#slogan #slogan_background {
+  border-radius: 25px;
+  height: 223px;
+  width: 100%;
+  object-fit: cover;
 }
 
-#slogan #slogan_background.repositioned{
-    position: relative;
-    bottom:223px;
-    z-index: -1;
+#slogan #slogan_background.repositioned {
+  position: relative;
+  bottom: 223px;
+  z-index: -1;
 }
 
 #slogan #slogan_text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 25px;
-    text-align: center;
-    font-size: 48px;
-    font-weight: 500;
-    line-height: 68px;
-    letter-spacing: 0em;
-    color: #FFFFFF;
-    margin: 0px;
-    height: 223px;
-    background-color: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 68px;
+  letter-spacing: 0em;
+  color: #ffffff;
+  margin: 0px;
+  height: 223px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 992px) {
+  #slogan #slogan_text {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #slogan #slogan_text {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #slogan #slogan_text {
+    justify-content: flex-start;
+    text-align: start;
+    line-height: unset;
+    padding-left: 10px;
+  }
+
+  #slogan #slogan_text .mobile-frame {
+    width: 220px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #slogan {
+    margin-top: unset;
+    height: 111px;
+  }
+
+  #slogan #slogan_background {
+    height: 111px;
+  }
+
+  #slogan #slogan_background.repositioned {
+    bottom: 111px;
+  }
+
+  #slogan #slogan_text {
+    font-size: 18px;
+    text-align: start;
+    line-height: unset;
+    justify-content: start;
+    height: 111px;
+  }
+
+  #slogan #slogan_text .mobile-frame {
+    width: 165px;
+  }
 }

@@ -14,7 +14,7 @@ function Slogan({ sloganText, sloganBackground }) {
   return (
     <section id="slogan">
       <h2 id="slogan_text" className={sloganTextClass}>
-        {sloganText}
+        <span className='mobile-frame'>{sloganText}</span>
       </h2>
       <img
         src={sloganBackground}

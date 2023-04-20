@@ -22,7 +22,7 @@ function Header() {
     <header>
       <h1>
         <Link to={navigation[0].link}>
-          <img src={logo} alt="Logo de Kasa" />
+          <img src={logo} alt="Logo de Kasa" id='logo'/>
         </Link>
       </h1>
 

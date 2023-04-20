@@ -25,3 +25,19 @@ a {
 .underline {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 600px) {
+  body {
+    padding-left:5%;
+    padding-right:5%;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  body {
+    padding-left:3%;
+    padding-right:3%;
+  }
+}
+
