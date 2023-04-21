@@ -52,3 +52,27 @@
     font-size: 15px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  #accommodation .collapse_area {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  }
+
+  #accommodation .collapse_area .collapse {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #accommodation .collapse_area .collapse .collapse_head {
+    height: 29px;
+  }
+
+  #accommodation .collapse_area .collapse .collapse_description p,
+  #accommodation .collapse_area .collapse .collapse_description li,
+  #accommodation .collapse_area .collapse .collapse_head h3 {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}

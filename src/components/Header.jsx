@@ -22,7 +22,7 @@ function Header() {
     <header>
       <h1>
         <Link to={navigation[0].link}>
-          <img src={logo} alt="Logo de Kasa" id='logo'/>
+          <img src={logo} alt="Logo de Kasa" id="logo" />
         </Link>
       </h1>
 
@@ -30,7 +30,13 @@ function Header() {
         <ul>
           {navigation.map(({ title, link, active }, index) => (
             <li key={`${title}-${index}`}>
-                {active ?  <Link to={link} className="underline">{title}</Link> : <Link to={link}>{title}</Link> }
+              {active ? (
+                <Link to={link} className="underline">
+                  {title}
+                </Link>
+              ) : (
+                <Link to={link}>{title}</Link>
+              )}
             </li>
           ))}
         </ul>

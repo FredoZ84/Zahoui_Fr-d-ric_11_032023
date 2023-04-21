@@ -7,15 +7,16 @@ import sloganBackground from '../../assets/kalen-emsley-Bkci_8qcdvQ-unsplash 2.p
 function About() {
   return (
     <main id="about">
-        <Slogan sloganText="" sloganBackground={sloganBackground} />
+      <Slogan sloganText="" sloganBackground={sloganBackground} />
       <div className="collapse_area">
-        {
-        datas.map((data, index) => (
-                <Collapse title={data.title} description={data.description} key={index}/>
-            ))
-        }        
+        {datas.map((data, index) => (
+          <Collapse
+            title={data.title}
+            description={data.description}
+            key={index}
+          />
+        ))}
       </div>
-
     </main>
   )
 }

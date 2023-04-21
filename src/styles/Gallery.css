@@ -57,5 +57,14 @@
 }
 
 .displayed {
-    display: block;
+  display: block;
+}
+
+@media screen and (max-width: 480px) {
+  .slider {
+    height: 255px;
+  }
+  .slider .slides .slide {
+    height: 325px;
+  }
 }

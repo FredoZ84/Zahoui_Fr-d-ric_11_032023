@@ -2,9 +2,11 @@ import '../styles/Gallery.css'
 
 function Gallery({ images }) {
   let arrowsClass = ''
+
   if (images.length === 1) {
-    arrowsClass ='none'
+    arrowsClass = 'none'
   }
+
   let compteur = 0
 
   function switchNext(e) {

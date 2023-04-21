@@ -81,7 +81,16 @@ nav ul li a {
 }
 
 @media screen and (max-width: 480px) {
-  /*#logo {
-    max-width: 73%;
-  }*/
+  nav ul {
+    padding-inline-start: 0;
+  }
+
+  nav ul li {
+    width: 55px;
+  }
+
+  nav ul li a {
+    font-size: 12px;
+    line-height: unset;
+  }
 }

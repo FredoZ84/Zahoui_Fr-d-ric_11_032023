@@ -1,12 +1,25 @@
 .fa-star {
-    font-size: 24px;
-    margin-left: 15px;
+  font-size: 24px;
+  margin-left: 15px;
 }
 
 .initial {
-    color: #E3E3E3;
+  color: #e3e3e3;
 }
 
 .colored {
-    color: #FF6060;
+  color: #ff6060;
+}
+
+@media screen and (max-width: 768px) {
+  .fa-star {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .fa-star {
+    font-size: 13px;
+    margin-left: 6px;
+  }
 }

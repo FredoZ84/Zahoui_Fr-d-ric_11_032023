@@ -5,17 +5,14 @@ import './index.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
 
+import Home from './pages/Home'
+import Accommodation from './pages/Accommodation'
+import About from './pages/About'
+import Error from './pages/Error'
 
-import Home from "./pages/Home";
-import Accommodation from "./pages/Accommodation";
-import About from "./pages/About";
-import Error from "./pages/Error";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
-
-
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
     <Router>
@@ -29,4 +26,4 @@ root.render(
       <Footer />
     </Router>
   </React.StrictMode>
-);
+)

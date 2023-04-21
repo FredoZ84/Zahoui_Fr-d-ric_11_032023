@@ -15,7 +15,6 @@
 
 #error .code {
   margin: 0;
-  margin-top: 100px;
   font-weight: 700;
   font-size: 288px;
   line-height: 411px;
@@ -37,4 +36,51 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 26px;
+}
+
+@media screen and (max-width: 768px) {
+  #error .code {
+    font-size: 248px;
+  }
+
+  #error .message {
+    font-size: 30px;
+    line-height: unset;
+  }
+
+  #error .link {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mobile-break {
+    display: inline;
+  }
+
+  #error .code {
+    font-size: 192px;
+  }
+
+  #error .message {
+    font-size: 24px;
+  }
+
+  #error .link {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #error .code {
+    font-size: 96px;
+  }
+
+  #error .message {
+    font-size: 18px;
+  }
+
+  #error .link {
+    font-size: 14px;
+  }
 }

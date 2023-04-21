@@ -1,17 +1,28 @@
 .tagList {
-    display: flex;
+  display: flex;
+  padding-inline-start: 0;
 }
 
 .tag {
-    width: 150px;
-    height: 25px;
-    background: #FF6060;
-    border-radius: 10px;
-    color: #FFFFFF;
-    margin-right: 20px;
-    font-weight: 500;
-    font-size: 14px;
+  width: 150px;
+  height: 25px;
+  background: #ff6060;
+  border-radius: 10px;
+  color: #ffffff;
+  margin-right: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  padding: 3px 0px;
+}
+
+@media screen and (max-width: 480px) {
+  .tag {
+    width: 115px;
+    height: 20px;
+    padding: 1px 0px;
+    font-size: 10px;
     line-height: 20px;
-    text-align: center;
-    padding: 3px 0px;
+  }
 }

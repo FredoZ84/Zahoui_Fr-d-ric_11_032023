@@ -41,7 +41,12 @@ function Accommodation() {
       </div>
       <div className="collapse_area">
         <Collapse title="Description" description={accommodation.description} />
-        <Collapse title="Équipements" description={accommodation.equipments.map((e,index)=>(<li key={index}>{e}</li>))} />
+        <Collapse
+          title="Équipements"
+          description={accommodation.equipments.map((e, index) => (
+            <li key={index}>{e}</li>
+          ))}
+        />
       </div>
     </main>
   )
